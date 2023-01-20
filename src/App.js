@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from 'react';
+import {
+  Route,
+  Outlet,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider
+} from 'react-router-dom';
 
-function App() {
+import Home from './pages/Home';
+import ProjectDetails from './pages/ProjectDetails';
+
+const Root = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Outlet />
     </div>
   );
-}
+};
+
+const App = () => {
+  useEffect(() => {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, []);
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<Root />}>
+        <Route index element={<Home />} />
+        <Route path="/:title" element={<ProjectDetails />} />
+      </Route>
+    )
+  );
+
+  return (
+    <div>
+      <RouterProvider router={router} />
+    </div>
+  );
+};
 
 export default App;
