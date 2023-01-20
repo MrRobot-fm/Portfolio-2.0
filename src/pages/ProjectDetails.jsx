@@ -7,7 +7,7 @@ const ProjectDetails = () => {
   const { state } = useLocation();
   console.log(state);
   return (
-    <div className="w-full dark:bg-blueRadialGradient h-screen">
+    <div className="w-full dark:bg-blueRadialGradient h-screen pb-6">
       <div className="w-full h-[30vh] lg:h-[40vh] relative">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10" />
         <img

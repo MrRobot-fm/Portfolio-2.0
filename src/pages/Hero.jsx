@@ -7,8 +7,8 @@ import { container, container2, item2, item } from '../animations/animation';
 const Hero = () => {
   return (
     <main className="w-full h-[calc(100vh-5rem)] text-center">
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
-        <div className="">
+      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center ">
+        <div className="mb-20 xl:mb-0">
           <motion.div
             variants={container}
             initial="hidden"
