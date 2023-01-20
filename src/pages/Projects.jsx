@@ -1,4 +1,3 @@
-import React from 'react';
 import ProjectItem from '../components/ProjectItem';
 import { projectsData } from '../data/projectsData';
 import { motion } from 'framer-motion';

@@ -1,7 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { item2, item7 } from '../animations/animation';
+import { item7 } from '../animations/animation';
 
 const ProjectItem = ({
   id,
