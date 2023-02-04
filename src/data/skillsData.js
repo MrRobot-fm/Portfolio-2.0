@@ -8,6 +8,7 @@ import reduxLogo from '../assets/skills/redux.png';
 import sassLogo from '../assets/skills/sass.png';
 import gitLogo from '../assets/skills/git.png';
 import reactRouterLogo from '../assets/skills/react-router.png';
+import nextjsLogo from '../assets/skills/nextjs.png';
 
 export const skillsData = [
   {
@@ -45,19 +46,24 @@ export const skillsData = [
     skill: 'redux toolkit',
     icon: reduxLogo
   },
-
   {
     id: 8,
+    skill: 'next js',
+    icon: nextjsLogo
+  },
+
+  {
+    id: 9,
     skill: 'tailwind css',
     icon: tailwindLogo
   },
   {
-    id: 9,
+    id: 10,
     skill: 'github',
     icon: githubLogo
   },
   {
-    id: 10,
+    id: 11,
     skill: 'git',
     icon: gitLogo
   }

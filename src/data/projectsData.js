@@ -15,7 +15,7 @@ export const projectsData = [
     title: 'Flight Footprint',
     img: footprintImg,
     imgDetails: footprintDetailsImg,
-    technologies: ['React JS', 'Redux Toolkit', 'React Router', 'Tailwind Css'],
+    technologies: ['React JS', 'React Router', 'Tailwind Css'],
     description:
       'Flight Footprint is a website developed with the idea of making users aware of the pollution produced by air travel, inside we can find a section where we can calculate the CO2 emissions produced by a flight by entering data such as: departure airport, destination airport, number of passengers and class of flight. I chose to work on this project because I enjoy traveling and I am very close to environmental sustainability issues. I hope that tomorrow most people will be aware of the damage we are generating to our planet and consequently to ourselves.',
     demoLink: 'https://flightfootprint.netlify.app/',
@@ -23,6 +23,17 @@ export const projectsData = [
   },
   {
     id: 2,
+    title: 'Crypto Dashboard',
+    img: cryptoImg,
+    imgDetails: cryptoImg,
+    technologies: ['Next JS'],
+    description:
+      'Crypto dashboard is a web app that was developed with the intention of providing information about the world of cryptocurrencies, in the main dashboard you can find information about the top 10 coins with attached graph and more general information. On the site there is a section where we can search for our favorite coin and see information such as the price and the change in a week. There is also a section where you can view the latest news on the world of cryptocurrency.',
+    demoLink: 'https://crypto-dashboard-fm.vercel.app/',
+    githubLink: 'https://github.com/MrRobot-fm/Crypto-dashboard'
+  },
+  {
+    id: 3,
     title: 'Spoonacular App',
     img: spoonacularImg,
     imgDetails: spoonacularDetailsImg,
@@ -33,7 +44,7 @@ export const projectsData = [
     githubLink: 'https://github.com/MrRobot-fm/Spoonacular'
   },
   {
-    id: 3,
+    id: 4,
     title: 'Mapty App',
     img: maptyImg,
     imgDetails: maptyDetailsImg,
@@ -42,17 +53,6 @@ export const projectsData = [
       'In this app, you can log your running or cycling workouts with location, distance, time, pace, and steps/minute. You can also see all your workouts at a glance and on a map. I developed this project following a Udemy tutorial, and I implemented some features like: sort by property, remove: workout/workouts, modal window, overview and set view.',
     demoLink: 'https://mapty-project-js.netlify.app/',
     githubLink: 'https://github.com/MrRobot-fm/Mapty'
-  },
-  {
-    id: 4,
-    title: 'Crypto App',
-    img: cryptoImg,
-    imgDetails: cryptoImg,
-    technologies: ['React'],
-    description:
-      'In crypto app was developed with the aim of searching for the cryptocurrencies of interest and displaying information such as: currency icon, name, price and a small graph on the weekly trend. The project is for demonstration purposes and is not a complete web page.',
-    demoLink: 'https://crypto-app-fm.netlify.app/',
-    githubLink: 'https://github.com/MrRobot-fm/Crypto-App'
   },
   {
     id: 5,
